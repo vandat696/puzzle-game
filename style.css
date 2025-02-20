@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+#puzzle-container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 5px;
+    margin: 20px auto;
+    width: fit-content;
+}
+
+.puzzle-piece {
+    width: 100px;
+    height: 100px;
+    background-size: 400px 400px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: green;
+}
+
+.hidden {
+    display: none;
+}
+.puzzle-piece.empty {
+    background-color: #ddd; /* Màu nền cho ô trống */
+    border: 2px dashed #999; /* Đường viền đứt nét */
+    background-image: none; /* Không hiển thị hình ảnh */
+}
