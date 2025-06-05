@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 piece.style.backgroundImage = "none";
             } else {
                 piece.classList.remove("empty");
-                piece.style.backgroundImage = "url('images/puzzle-image.jpg')";
+                piece.style.backgroundImage = "url('images/matma.png')";
                 piece.style.backgroundPosition = `-${(pos % 4) * 100}px -${Math.floor(pos / 4) * 100}px`;
             }
             piece.dataset.index = pos;
