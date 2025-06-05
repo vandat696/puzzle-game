@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (shuffledOrder[i] === 15) {
             piece.classList.add("empty"); // Thêm class 'empty' cho ô trống
         } else {
-            piece.style.backgroundImage = "url('images/puzzle-image.jpg')";
+            piece.style.backgroundImage = "url('images/matma.png')";
             piece.style.backgroundPosition = `-${(shuffledOrder[i] % 4) * 100}px -${Math.floor(shuffledOrder[i] / 4) * 100}px`;
         }
         piece.dataset.index = shuffledOrder[i];
